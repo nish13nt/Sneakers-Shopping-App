@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(Provider.of<CartProvider>(context).cart);
     return ChangeNotifierProvider(
       create: (context) => CartProvider(),
       child: MaterialApp(
